@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = css/BookingStyle.css>
+    <link rel = 'stylesheet' href = css/HomeStyle.css>
+    <link rel= 'stylesheet' href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel= "shortcut icon" type="image/png" href="./Resources/Common/icon.png">
+    <title>Booking</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class = "topnav">
+      <a href="index.html">Home</a>
+      <div class = "dropdown">
+        <button class="dropbtn">
+          Activities 
+        </button>
+        <div class="dropdown-content">
+          <a href="Aviation.html">Aviation</a>
+          <a href="Water.html">Water</a>
+          <a href="Family.html">Family</a>
+          <a href="Food.html">Food</a>
+          <a href="Sport.html">Sport</a>
+          <a href="Wildlife.html">Wildlife</a>
+          <a href="Relax.html">Relax</a>
+          <a href="Night.html">Night</a>
+        </div>
+      </div>
+      <a href="Accomodation.html">Accommodation</a>
+      <a  class="active" href="Booking.html">Booking</a>
+      <a href="Gallary.html">Gallary</a>
+      <a href="IslandMap.html">Island Map</a>
+      <a href="About.html">About</a>
+    </div>
+    <h2><u>Booking Form</u></h2>
+    <!-- Booking Form Part 1 -->
+    <div class="booking">
+      <form method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Smith" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.smith@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Mobile Number</label>
+          <input type="number" id="phone" name="visitor_phone" placeholder="0430605421" max="9999999999" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children (0-12 Years)</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check In Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check Out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Room Type</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="" disabled selected>Choose a Room from the List</option>
+            <option value="single">Singles Room</option>
+            <option value="family">Family Room</option>
+            <option value="couples">Couples Room</option>
+            <option value="friends">Friends Room</option>
+          </select>
+        </div>
+      <!-- End of main form -->
+      </form>
+    </div>
+    <!-- Booking Form Part 2 -->
+    <div class= "part2">
+      <!-- Aviation -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">
+              <select>
+                <option>Aviation Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes">
+              <label for="one"><input type="checkbox" id="one" />Plane Spotting</label>
+              <label for="two"><input type="checkbox" id="two" />Skydiving</label>
+              <label for="three"><input type="checkbox" id="three" />Fighter Jet Ride</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Water -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes1()">
+              <select>
+                <option>Water Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes1">
+              <label for="four"><input type="checkbox" id="four" />Surfing</label>
+              <label for="five"><input type="checkbox" id="five" />Fishing</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Family -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes2()">
+              <select>
+                <option>Family Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes2">
+              <label for="six"><input type="checkbox" id="six" />Kids Club</label>
+              <label for="seven"><input type="checkbox" id="seven" />Mini Golf</label>
+              <label for="eight"><input type="checkbox" id="eight" />Trail Walks</label>
+              <label for="nine"><input type="checkbox" id="nine" />Go Karting</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Food -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes3()">
+              <select>
+                <option>Food Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes3">
+              <label for="ten"><input type="checkbox" id="ten" />Street Food</label>
+              <label for="eleven"><input type="checkbox" id="eleven" />Food Trucks</label>
+              <label for="tweleve"><input type="checkbox" id="tweleve" />Resturants</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Sport -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes4()">
+              <select>
+                <option>Sport Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes4">
+              <label for="13"><input type="checkbox" id="13" />Golf</label>
+              <label for="14"><input type="checkbox" id="14" />Football</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Wildlife -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes5()">
+              <select>
+                <option>Wildlife Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes5">
+              <label for="15"><input type="checkbox" id="15" />Animal Sanctuary</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Relax -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes6()">
+              <select>
+                <option>Relax Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes6">
+              <label for="16"><input type="checkbox" id="16" />Pool</label>
+              <label for="17"><input type="checkbox" id="17" />Island Cruise</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Night -->
+      <div class="elem-group inlined1">
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes7()">
+              <select>
+                <option>Night Activities</option>
+              </select>
+              <div class="overSelect">
+              </div>
+            </div>
+            <div id="checkboxes7">
+              <label for="18"><input type="checkbox" id="18" />Nightclubs</label>
+              <label for="19"><input type="checkbox" id="19" />Bars</label>
+              <label for="20"><input type="checkbox" id="20" />Volanic Eruption Tour</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Final Cost Display -->
+      <h2>Booking Summary</h2>
+      <hr class = "hrbok">
+      <h3>Booking Cost: $1400</h3>
+      <h3>Tax: $550.43 (GST + VAT)</h3>
+      <h4>Total Cost: $1950.43</h4>
+      <!-- Handle Submit button -->
+      <button onclick="document.getElementById('id01').style.display='block'" class="subbut" >Submit Booking</button>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <h1>Submit Booking</h1>
+              <p>Are you sure you want to submit your booking as this is final?</p>
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">NO</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">YES</button>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <!-- Js Script for Pop Up -->
+    <script src= "js/popup.js"></script>
+    <!-- Js Script for Multi Check Box -->
+    <script src= "js/dropdowncheck.js"></script>
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class = "navlinks">
+        <a href="index.html">Home</a>
+        <br/>
+        <a href="Aviation.html">Aviation</a>
+        <br/>
+        <a href="Water.html">Water</a>
+        <br/>
+        <a href="Family.html">Family</a>
+        <br/>
+        <a href="Food.html">Food</a>
+        <br/>
+        <a href="Sport.html">Sport</a>
+        <br/>
+        <a href="Wildlife.html">Wildlife</a>
+        <br/>
+        <a href="Relax.html">Relax</a>
+        <br/>
+        <a href="Night.html">Night</a>
+      </div>
+      <div class = "navlinks">
+        <a href="Accomodation.html">Accommodation</a>
+        <br/>
+        <a href="Booking.html">Booking</a>
+        <br/>
+        <a href="Gallary.html">Gallary</a>
+        <br/>
+        <a href="IslandMap.html">Island Map</a>
+        <br/>
+        <a href="About.html">About</a>
+        <hr class = "fot">
+        <div class = "tnc">
+            <h2>Terms & Conditions</h2>
+            <p>Reservations are subject to availability and actual pricing at the time of booking</p>
+            <p> All quotes are valid for 24hrs only. Any verbal quote given is an estimate only of price, 
+              which will be subject to written advice on confirmation of reservation.
+            </p>
+            <p>By providing valid credit card details, you warrant that you have the authority to use the 
+              credit card and you authorise Excitement Island Resort to charge the cost of your booking to the 
+              credit card in the case of cancellation or no show penalties as detailed below.
+            </p>
+            <p>All reservations will be confirmed by email</p>
+        </div>
+      </div>
+      <div class = "navlinks">
+        <div class="lot">
+          <h1>
+            Sign up for our newsletter
+            Be the first to hear news about our Resorts activities, events and new special offers
+          </h1>
+          <div class= "emailbox">
+            <i class="fas fa-envelope fa-2x"></i>
+            <input class="tbox" type="email" name="box" value="" placeholder="Enter your email">
+            <button class="sub" type="button" name="button">Subscribe</button>
+          </div>
+          <h2>
+            We promise we won't spam your inbox with loads of cool
+            deals and discounts and super awesome news.
+            (unless you want us to?)
+          </h2>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

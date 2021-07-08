@@ -1,0 +1,152 @@
+/* Slideshow */
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  width: 700px;
+  height: 350px;
+  padding-top: 50px;
+  padding-left: 100px;
+  margin-left: 4%;
+}
+  
+/* Slideshow image display*/
+.mySlides {
+  display: none;
+}
+.mySlides img{
+  width: 600px;
+  height: 350px;
+  border-radius: 10px;
+}
+.mySlides1 img{
+  width: 600px;
+  height: 350px;
+  border-radius: 10px;
+}
+.mySlides2 img{
+  width: 600px;
+  height: 350px;
+  border-radius: 10px;
+}
+.mySlides3 img{
+  width: 600px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  padding-top: 45px;
+  margin-left: 26%;
+}
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Text Display */
+.spottext{
+  margin-right: 6%;
+  margin-top: 20px;
+  float: right;
+  max-width: 500px;
+  min-width: 50px;
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.spottext h1{
+  font-size: 34px;  
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Andale Mono, monospace;
+}
+.spottext p{
+  text-align: justify;
+  font-size: 16px;  
+  color:black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Calibri, monospace;
+  line-height: 1.6;
+}
+/* Slideshow 1 Display*/
+.mySlides1 {
+    display: none;
+}     
+.dot1 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot1:hover {
+  background-color: #717171;
+}
+      
+/* Slideshow 2 Display*/
+.mySlides2 {
+  display: none;
+}
+.dot2 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Slideshow 3 Display*/
+.mySlides3 {
+  display: none;
+}
+.dot3 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot3:hover {
+  background-color: #717171;
+}
