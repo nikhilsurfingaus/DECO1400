@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ionicons Link -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel = 'stylesheet' href = css/AboutStyle.css>
+    <link rel = 'stylesheet' href = css/HomeStyle.css>
+    <link rel= 'stylesheet' href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel= "shortcut icon" type="image/png" href="./Resources/Common/icon.png">
+    <title>About</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class = "topnav">
+        <a href="index.html">Home</a>
+        <div class = "dropdown">
+            <button class="dropbtn">
+                Activities 
+            </button>
+            <div class="dropdown-content">
+                <a href="Aviation.html">Aviation</a>
+                <a href="Water.html">Water</a>
+                <a href="Family.html">Family</a>
+                <a href="Food.html">Food</a>
+                <a href="Sport.html">Sport</a>
+                <a href="Wildlife.html">Wildlife</a>
+                <a href="Relax.html">Relax</a>
+                <a href="Night.html">Night</a>
+            </div>
+        </div>
+        <a href="Accomodation.html">Accommodation</a>
+        <a href="Booking.html">Booking</a>
+        <a href="Gallary.html">Gallary</a>
+        <a href="IslandMap.html">Island Map</a>
+        <a class="active" href="About.html">About</a>
+    </div>
+    <!-- Contact Us Information -->
+    <h2><u>Contact Us</u></h2>
+    <div class="text">
+        <p>
+            Team Excitement Island Resorts have put together some FAQ’s to help plan your stay with us. 
+            If you have any questions please give us a call on 07 5514 4400 or email excitementresort@gmail.com
+            The whole team are ready and waiting to welcome you to Excitement Island Resort.
+        </p>
+    </div>
+    <br/>
+    <br/>
+    <!-- FAQ Drop Down Section -->
+    <hr class = "hrmap">
+    <h2><u>FAQ</u></h2>
+    <section>
+        <div class = "container">
+            <div class = "accordian">
+                <div class = "accordian-item" id = "question1">
+                    <a class = "accordian-link" href = "#question1">
+                        Check-in and Check out process?
+                        <ion-icon class = "add" name="caret-down-outline"></ion-icon>
+                        <ion-icon class = "remove" name="caret-up-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <ul>
+                        <li>Check-in is from 2pm for family room, 12pm for couples sites & 11 am for all other rooms</li>
+                            <li>Check-out is no later than 10 am for all rooms</li>
+                            <li>Our office closes at 6 pm Saturday to Thursday & 7 pm on Friday</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "accordian-item" id = "question2">
+                    <a class = "accordian-link" href = "#question2">
+                        Planning your stay with us?
+                        <ion-icon class = "add" name="caret-down-outline"></ion-icon>
+                        <ion-icon class = "remove" name="caret-up-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <ul>
+                            <li>ID Wristbands: must always be worn during your stay. If you happen to break one – 
+                                please return it to reception for a replacement</li>
+                            <li>GATE ACCESS: Only one gate code per car can be used. Due to limited space, 
+                                we only allow 1 car per room.  Extra vehicles must be parked outside the resort</li>
+                            <li>POOL & WATERPARK RULES: These rules are posted around the pool and waterpark 
+                                and are for the safety and comfort of all our guests</li>
+                            <li>QUIET TIME: We have a lockout rule for all nighclubs and bars of 3am, we
+                                prefer guests keep noise to a minimum after 3am.
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class = "accordian-item" id = "question3">
+                    <a class = "accordian-link" href = "#question3">
+                        Is there Internet or WiFi access available?
+                        <ion-icon class = "add" name="caret-down-outline"></ion-icon>
+                        <ion-icon class = "remove" name="caret-up-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <ul>
+                            <li>WiFi is available on the enitre island</li>
+                            <li>For NBN wifi for our business guests NBN WiFi is available, surcharge applies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "accordian-item" id = "question4">
+                    <a class = "accordian-link" href = "#question4">
+                        Q: How does room service work?
+                        <ion-icon class = "add" name="caret-down-outline"></ion-icon>
+                        <ion-icon class = "remove" name="caret-up-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <ul>
+                            <li>All rooms are self contained with a FREE service clean for stays of 7 days or longer</li>
+                            <li>Our room service for food is 24/7 with chefs from around the world on hand, take a look 
+                                at your menu in your room for dishes to order</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <!-- Pop Up Special Deal -->
+    <div id = "ID02" class = "popup">
+        <div class = "contentbox">
+        <div class = "close"> X </div>
+            <div class = "image">
+                <img src = "./Resources/Common/sunbed.png" alt = "relax icon">
+            </div>
+            <div class = "content">
+                <div>
+                    <h3>Special Offer</h3>
+                    <h2>10% OFF</h2>
+                    <p>Head over to the booking page right now and you will recieve 
+                        10% off your booking price.
+                    </p>
+                    <a href="Booking.html"> Get the Deal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script to handle pop up deal -->
+    <script src = "./js/popupscript.js"></script>
+    <!-- Code, Image and Resource Reference List APA 6th Edition Format -->
+    <hr class = "hrmap">
+    <h2><u>Reference List</u></h2>
+    <div class = text-three>
+        <p>
+            W3Schools Online Web Tutorials. (2021). Retrieved 24 May 2021, 
+            from https://www.w3schools.com/
+            <br/>
+            <br/>
+            Luscombe, M.(2021). DECO1400 Lectures. Presentation,
+            https://www.youtube.com/channel/UCf55X-cFl822zzucLtSN5wA.
+            <br/>
+            <br/>
+            Coding Snow. (2021). Image Slider - With Auto-play & Manual Navigation Buttons [Video]. 
+            Retrieved from https://www.youtube.com/watch?v=0wvrlOyGlq0
+            <br/>
+            <br/>
+            Julio Codes. (2021). Responsive FAQ accordion dropdown [Video]. Retrieved from https://youtu.be/MXrtXg1kpVs
+            <br/>
+            <br/>
+            Practical Code Academy. (2021). How to create Interactive map layers [Video]. Retrieved from https://youtu.be/qNqxgSoknGg
+            <br/>
+            <br/>
+            Online Tutorials. (2021). Automatic Show Popup After Page Load | CSS and Javascript 
+            [Video]. Retrieved from https://youtu.be/U2k4DWKt_FE
+            <br/>
+            <br/>
+            Angga Risky. (2021). How to use Checkbox inside Select Option HTML JavaScript CSS Tutorial [Image]. 
+            Retrieved from https://youtu.be/yMKTRn_THeA
+            <br/>
+            <br/>
+            Pixabay. (2021). Airplane maho beach saint martin [Image]. Retrieved 
+            from https://pixabay.com/photos/airplane-maho-beach-saint-martin-2690200/
+            <br/>
+            <br/>
+            Pixabay. (2021). Atlantis Bahamas Island Hotel [Image]. Retrieved from 
+            https://pixabay.com/photos/atlantis-bahamas-island-tropical-692201/
+            <br/>
+            <br/>
+            Pixabay. (2021). surfing wollongong shellharbour [Image]. 
+            Retrieved from https://pixabay.com/photos/surfing-wollongong-shellharbour-4791216/
+            <br/>
+            <br/>
+            Pixabay. (2021). dj live music [Image]. Retrieved from https://pixabay.com/photos/dj-live-live-music-hang-up-sound-2089814/
+            <br/>
+            <br/>
+            Pixabay. (2021). market introduction oden [Image]. 
+            Retrieved from https://pixabay.com/photos/market-market-introduction-oden-1971125/
+            <br/>
+            <br/>
+            Pixabay. (2021). beach family fun [Image]. Retrieved from https://pixabay.com/photos/beach-family-fun-leisure-ocean-1867271/
+            <br/>
+            <br/>
+            Pixabay. (2021). football goal goalkeeper [Image]. 
+            Retrieved from https://pixabay.com/photos/football-goal-goalkeeper-sport-2756685/
+            <br/>
+            <br/>
+            Pixabay. (2021). child girl animals feed deer [Image]. 
+            Retrieved from https://pixabay.com/photos/child-girl-animals-feed-deer-wild-5460422/
+            <br/>
+            <br/>
+            Pixabay. (2021). swimming pool channel [Image]. 
+            Retrieved from https://pixabay.com/photos/swimming-pool-channel-berlin-377355/
+            <br/>
+            <br/>
+            FreePik. (2021). cartoon suns [Image]. Retrieved from 
+            https://www.freepik.com/premium-vector/cartoon-suns_790041.htm#page=1&query=cartoon%20sun&position=21
+            <br/>
+            <br/>
+            Pixabay. (2021). instagram logo [Image]. Retrieved from https://pixabay.com/photos/instagram-social-media-symbol-2815919/
+            <br/>
+            <br/>
+            FreePik. (2021). Facebook Youtube [Image]. Retrieved from 
+            https://www.freepik.com/free-vector/modern-social-media-icon-set-flat-design_2101104.htm#page=1&query=youtube%20logo&position=1
+            <br/>
+            <br/>
+            Pixabay. (2021). Plane Spotter [Image]. Retrieved from https://pixabay.com/photos/photographer-human-camera-man-3672010/
+            <br/>
+            <br/>
+            Pixabay. (2021). Plane Spotter [Image]. Retrieved from https://pixabay.com/photos/photographer-human-camera-man-367209/
+            <br/>
+            <br/>
+            Pixabay. (2021). Plane Spotter [Image]. Retrieved from https://pixabay.com/photos/photographer-human-camera-man-367208/
+            <br/>
+            <br/>
+            Pixabay. (2021). Plane Spotter [Image]. Retrieved from https://pixabay.com/photos/photographer-human-camera-man-367207/
+            <br/>
+            <br/>
+            Pixabay. (2021). Plane Spotter [Image]. Retrieved from https://pixabay.com/photos/photographer-human-camera-man-367205/
+            <br/>
+            <br/>
+            Pixabay. (2021). Plane Spotter [Image]. Retrieved from https://pixabay.com/photos/photographer-human-camera-man-367201/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721298/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving gallery [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721299/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving gallery [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721298/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving gallery [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721295/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving gallery [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721292/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving gallery [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721291/
+            <br/>
+            <br/>
+            Pixabay. (2021). Sky diving gallery [Image]. Retrieved from https://pixabay.com/photos/skydiving-sport-extreme-escape-sky-721290/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63028/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet gallery [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63027/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet gallery [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63025/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet gallery [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63023/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet gallery [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63020/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet gallery [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63021/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fighter jet gallery [Image]. Retrieved from https://pixabay.com/photos/aircraft-fighter-jet-flying-flight-63026/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212948/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212947/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212948/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212942/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212941/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212940/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212943/
+            <br/>
+            <br/>
+            Pixabay. (2021). Surfing Pro gallery [Image]. Retrieved from https://pixabay.com/photos/surfing-sunset-waves-surf-2212946/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541327/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541326/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541325/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541323/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541321/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541329/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541320/
+            <br/>
+            <br/>
+            Pixabay. (2021). Fishing gallery [Image]. Retrieved from https://pixabay.com/photos/fishing-boat-fishing-rod-fishing-5541328/
+            <br/>
+            <br/>
+            Pixabay. (2021). kids Playing [Image]. Retrieved from https://pixabay.com/photos/people-children-child-happy-1560569/
+            <br/>
+            <br/>
+            Pixabay. (2021). kids Playing Gallery [Image]. Retrieved from https://pixabay.com/photos/people-children-child-happy-1560568/
+            <br/>
+            <br/>
+            Pixabay. (2021). kids Playing Gallery [Image]. Retrieved from https://pixabay.com/photos/people-children-child-happy-1560560/
+            <br/>
+            <br/>
+            Pixabay. (2021). kids Playing Gallery [Image]. Retrieved from https://pixabay.com/photos/people-children-child-happy-1560561/
+            <br/>
+            <br/>
+            Pixabay. (2021). kids Playing Gallery [Image]. Retrieved from https://pixabay.com/photos/people-children-child-happy-1560564/
+            <br/>
+            <br/>
+            Pixabay. (2021). Minigolf [Image]. Retrieved from https://pixabay.com/photos/amusement-park-amusement-park-1209681/
+            <br/>
+            <br/>
+            Pixabay. (2021). Minigolf Gallery [Image]. Retrieved from https://pixabay.com/photos/amusement-park-amusement-park-1209680/
+            <br/>
+            <br/>
+            Pixabay. (2021). Minigolf Gallery [Image]. Retrieved from https://pixabay.com/photos/amusement-park-amusement-park-1209683/
+            <br/>
+            <br/>
+            Pixabay. (2021). Minigolf Gallery [Image]. Retrieved from https://pixabay.com/photos/amusement-park-amusement-park-1209689/
+            <br/>
+            <br/>
+            Pixabay. (2021). Minigolf Gallery [Image]. Retrieved from https://pixabay.com/photos/amusement-park-amusement-park-1209687/
+            <br/>
+            <br/>
+            Pixabay. (2021). Minigolf Gallery [Image]. Retrieved from https://pixabay.com/photos/amusement-park-amusement-park-1209684/
+            <br/>
+            <br/>
+            Pixabay. (2021). Family [Image]. Retrieved from https://pixabay.com/photos/family-parents-mother-father-2485714/
+            <br/>
+            <br/>
+            Pixabay. (2021). Family Gallery [Image]. Retrieved from https://pixabay.com/photos/family-parents-mother-father-2485713/
+            <br/>
+            <br/>
+            Pixabay. (2021). Family Gallery [Image]. Retrieved from https://pixabay.com/photos/family-parents-mother-father-2485716/
+            <br/>
+            <br/>
+            Pixabay. (2021). Family Gallery [Image]. Retrieved from https://pixabay.com/photos/family-parents-mother-father-2485719/
+            <br/>
+            <br/>
+            Pixabay. (2021). Family Gallery [Image]. Retrieved from https://pixabay.com/photos/family-parents-mother-father-2485718/
+            <br/>
+            <br/>
+            Pixabay. (2021). Family Gallery [Image]. Retrieved from https://pixabay.com/photos/family-parents-mother-father-2485712/
+            <br/>
+            <br/>
+            Pixabay. (2021). Go Kart [Image]. Retrieved from https://pixabay.com/photos/kart-karting-race-sport-4312118/
+            <br/>
+            <br/>
+            Pixabay. (2021). Go Kart Gallery [Image]. Retrieved from https://pixabay.com/photos/kart-karting-race-sport-4312117/
+            <br/>
+            <br/>
+            Pixabay. (2021). Go Kart Gallery [Image]. Retrieved from https://pixabay.com/photos/kart-karting-race-sport-4312115/
+            <br/>
+            <br/>
+            Pixabay. (2021). Go Kart Gallery [Image]. Retrieved from https://pixabay.com/photos/kart-karting-race-sport-4312112/
+            <br/>
+            <br/>
+            Pixabay. (2021). Go Kart Gallery [Image]. Retrieved from https://pixabay.com/photos/kart-karting-race-sport-4312110/
+            <br/>
+            <br/>
+            Pixabay. (2021). Go Kart Gallery [Image]. Retrieved from https://pixabay.com/photos/kart-karting-race-sport-4312113/
+            <br/>
+            <br/>
+            Pixabay. (2021). Street Food [Image]. Retrieved from https://pixabay.com/photos/man-cart-street-food-culture-rain-5524488/
+            <br/>
+            <br/>
+            Pixabay. (2021). Street Food Gallery [Image]. Retrieved from https://pixabay.com/photos/man-cart-street-food-culture-rain-5524487/  
+            <br/>
+            <br/>
+            Pixabay. (2021). Street Food Gallery [Image]. Retrieved from https://pixabay.com/photos/man-cart-street-food-culture-rain-5524485/ 
+            <br/>
+            <br/>
+            Pixabay. (2021). Street Food Gallery [Image]. Retrieved from https://pixabay.com/photos/man-cart-street-food-culture-rain-5524484/ 
+            <br/>
+            <br/>
+            Pixabay. (2021). Street Food Gallery [Image]. Retrieved from https://pixabay.com/photos/man-cart-street-food-culture-rain-5524481/
+            <br/>
+            <br/>
+            Pixabay. (2021). Food Truck [Image]. Retrieved from https://pixabay.com/photos/food-truck-power-supply-car-purple-1539344/
+            <br/>
+            <br/>
+            Pixabay. (2021). Food Truck Gallery  [Image]. Retrieved from https://pixabay.com/photos/food-truck-power-supply-car-purple-1539343/
+            <br/>
+            <br/>
+            Pixabay. (2021). Food Truck Gallery  [Image]. Retrieved from https://pixabay.com/photos/food-truck-power-supply-car-purple-1539341/
+            <br/>
+            <br/>
+            Pixabay. (2021). Food Truck Gallery  [Image]. Retrieved from https://pixabay.com/photos/food-truck-power-supply-car-purple-1539349/
+            <br/>
+            <br/>
+            Pixabay. (2021). Food Truck Gallery  [Image]. Retrieved from https://pixabay.com/photos/food-truck-power-supply-car-purple-1539347/
+            <br/>
+            <br/>            
+            Pixabay. (2021). Restaurant [Image]. Retrieved from https://pixabay.com/photos/restaurant-gastronomy-guest-room-3597677/
+            <br/>
+            <br/>        
+            Pixabay. (2021). Restaurant Gallery [Image]. Retrieved from https://pixabay.com/photos/restaurant-gastronomy-guest-room-3597676/
+            <br/>
+            <br/>        
+            Pixabay. (2021). Restaurant Gallery [Image]. Retrieved from https://pixabay.com/photos/restaurant-gastronomy-guest-room-3597672/
+            <br/>
+            <br/>        
+            Pixabay. (2021). Restaurant Gallery [Image]. Retrieved from https://pixabay.com/photos/restaurant-gastronomy-guest-room-3597671/
+            <br/>
+            <br/>        
+            Pixabay. (2021). Restaurant Gallery [Image]. Retrieved from https://pixabay.com/photos/restaurant-gastronomy-guest-room-3597670/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Football [Image]. Retrieved from https://pixabay.com/photos/soccer-football-soccer-players-kick-1457988/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Football Gallery [Image]. Retrieved from https://pixabay.com/photos/soccer-football-soccer-players-kick-1457987/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Football Gallery [Image]. Retrieved from https://pixabay.com/photos/soccer-football-soccer-players-kick-1457983/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Football Gallery [Image]. Retrieved from https://pixabay.com/photos/soccer-football-soccer-players-kick-1457980/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Football Gallery [Image]. Retrieved from https://pixabay.com/photos/soccer-football-soccer-players-kick-1457981/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Golf [Image]. Retrieved from https://pixabay.com/photos/golf-sunset-sport-golfer-bat-1758094/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Golf Gallery [Image]. Retrieved from https://pixabay.com/photos/golf-sunset-sport-golfer-bat-1758093/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Golf Gallery [Image]. Retrieved from https://pixabay.com/photos/golf-sunset-sport-golfer-bat-1758099/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Golf Gallery [Image]. Retrieved from https://pixabay.com/photos/golf-sunset-sport-golfer-bat-1758098/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Golf Gallery [Image]. Retrieved from https://pixabay.com/photos/golf-sunset-sport-golfer-bat-1758093/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Golf Gallery [Image]. Retrieved from https://pixabay.com/photos/golf-sunset-sport-golfer-bat-1758091/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals [Image]. Retrieved from https://pixabay.com/photos/tiger-feline-stripes-big-cat-1868911/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868901/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868904/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868909/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868902/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868900/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868908/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Zoo Animals Gallery [Image]. Retrieved from https://pixabay.com/photos/zoo-animlals-enclosure-1868907/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Pool [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-luxury-pool-swimming-389267/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Pool Gallery [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-party-389266/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Pool Gallery [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-party-389260/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Pool Gallery [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-party-389268/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Pool Gallery [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-party-389262/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Pool Gallery [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-party-389261/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123059/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise Gallery [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123058/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise Gallery [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123055/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise Gallery [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123052/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise Gallery [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123050/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise Gallery [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123057/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Cruise Gallery [Image]. Retrieved from https://pixabay.com/photos/ferry-boat-ship-ocean-ferry-123053/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar [Image]. Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492748/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492747/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492746/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492742/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492741/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492740/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492743/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492745/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Nightclub & Bar Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/nightclub-crowd-disco-entertainment-3492749/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption [Image]. Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813837/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813835/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813834/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813831/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813833/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813839/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Volcano Eruption Gallery [Image]. 
+            Retrieved from https://pixabay.com/photos/volcano-eruption-lava-smoke-rocks-4813837/
+            <br/>
+            <br/> 
+            Pixabay. (2021). Bedroom Single [Image]. Retrieved from https://pixabay.com/photos/bedroom-bed-apartment-room-416062/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bedroom Family [Image]. Retrieved from https://pixabay.com/photos/bedroom-bed-apartment-room-416060/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bedroom Kids [Image]. Retrieved from https://pixabay.com/photos/bedroom-bed-apartment-room-416068/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bedroom Couples [Image]. Retrieved from https://pixabay.com/photos/bedroom-bed-apartment-room-416069/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bedroom Friends [Image]. Retrieved from https://pixabay.com/photos/bedroom-bed-apartment-room-416063/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bathroom Single [Image]. Retrieved from https://pixabay.com/photos/hotel-bathroom-interior-villa-1737171/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bathroom Family [Image]. Retrieved from https://pixabay.com/photos/hotel-bathroom-interior-villa-1737175/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bathroom Couple [Image]. Retrieved from https://pixabay.com/photos/hotel-bathroom-interior-villa-1737178/
+            <br/>
+            <br/>
+            Pixabay. (2021). Bathroom Friends  [Image]. Retrieved from https://pixabay.com/photos/hotel-bathroom-interior-villa-1737170/
+            <br/>
+            <br/>
+            Pixabay. (2021). Personal Pool Single [Image]. Retrieved from https://pixabay.com/photos/swimming-pool-infinity-swimming-pool-1737173/
+            <br/>
+            <br/>
+            Pixabay. (2021). Personal Pool Family [Image]. Retrieved from
+            https://pixabay.com/photos/swimming-pool-infinity-swimming-pool-1737172/
+            <br/>
+            <br/>
+            Pixabay. (2021). Personal Pool Couple [Image]. Retrieved from 
+            https://pixabay.com/photos/swimming-pool-infinity-swimming-pool-1737179/
+            <br/>
+            <br/>
+            Pixabay. (2021). Personal Pool Friends [Image]. 
+            Retrieved from https://pixabay.com/photos/swimming-pool-infinity-swimming-pool-1737176/
+            <br/>
+            <br/>
+            Pixabay. (2021). Living Room Family [Image]. Retrieved from https://pixabay.com/photos/living-room-interior-design-1835923/
+            <br/>
+            <br/>
+            Pixabay. (2021). Living Room Friends [Image]. Retrieved from https://pixabay.com/photos/living-room-interior-design-1835928/
+            <br/>
+            <br/>
+            Pixabay. (2021). Kitchen Couples[Image]. Retrieved from https://pixabay.com/photos/kitchen-interior-design-room-home-1940174/
+            <br/>
+            <br/>
+            Pixabay. (2021). Table Tennis Friends [Image]. Retrieved from https://pixabay.com/photos/youth-center-table-tennis-facility-6102797/
+            <br/>
+            <br/>
+        </p>
+    </div>
+    <!-- Footer Section-->
+    <div class="footer">
+        <div class = "navlinks">
+            <a href="index.html">Home</a>
+            <br/>
+            <a href="Aviation.html">Aviation</a>
+            <br/>
+            <a href="Water.html">Water</a>
+            <br/>
+            <a href="Family.html">Family</a>
+            <br/>
+            <a href="Food.html">Food</a>
+            <br/>
+            <a href="Sport.html">Sport</a>
+            <br/>
+            <a href="Wildlife.html">Wildlife</a>
+            <br/>
+            <a href="Relax.html">Relax</a>
+            <br/>
+            <a href="Night.html">Night</a>
+        </div>
+        <div class = "navlinks">
+            <a href="Accomodation.html">Accommodation</a>
+            <br/>
+            <a href="Booking.html">Booking</a>
+            <br/>
+            <a href="Gallary.html">Gallary</a>
+            <br/>
+            <a href="IslandMap.html">Island Map</a>
+            <br/>
+            <a href="About.html">About</a>
+            <hr class = "fot">
+            <div class = "tnc">
+                <h2>Terms & Conditions</h2>
+                <p>Reservations are subject to availability and actual pricing at the time of booking</p>
+                <p> All quotes are valid for 24hrs only. Any verbal quote given is an estimate only of price, 
+                    which will be subject to written advice on confirmation of reservation.
+                </p>
+                <p>By providing valid credit card details, you warrant that you have the authority to use the 
+                    credit card and you authorise Excitement Island Resort to charge the cost of your booking to the 
+                    credit card in the case of cancellation or no show penalties as detailed below.
+                </p>
+                <p>All reservations will be confirmed by email</p>
+            </div>
+        </div>
+        <div class = "navlinks">
+            <div class="lot">
+                <h1>Sign up for our newsletter
+                    Be the first to hear news about our Resorts activities, events and new special offers
+                </h1>
+                <div class= "emailbox">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <input class="tbox" type="email" name="box" value="" placeholder="Enter your email">
+                    <button class="sub" type="button" name="button">Subscribe</button>
+                </div>
+                <h2>
+                    We promise we won't spam your inbox with loads of cool
+                    deals and discounts and super awesome news.
+                    (unless you want us to?)
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
